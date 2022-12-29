@@ -4,16 +4,28 @@ using UnityEngine;
 using TMPro; 
 public class Maneger : MonoBehaviour
 {
-    public string[] dialouge;
-    public TextMeshProUGUI dialogue_text; 
-    // Start is called before the first frame update
+    public string[] dialouges;
+
+    public int current_dialogue = 0;
+
+    public TextMeshProUGUI text_object;
+
     void Start()
     {
-        dialogue_text.text = "wow coding";
+        // SET THE TEXT TO FIRST DIALOGUE.
     }
 
-    // Update is called once per frame
-    void Update()
+    public void next_dialogue()
     {
+        // INCREASE CURR DIALOGUE BY 1
+
+
+        // SET THE DIALOGUE TEXT.
     }
+
 }
+
+// HINTS
+// 1) create a public variable of type TextMeshProUGUI.
+// 2) fill the variable in inspector with the dialogue text
+// 3) on click then set the variable.text to dialogue..
