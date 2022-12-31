@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro; 
 public class Maneger : MonoBehaviour
 {
-    public string[] dialouges;
+    public string[] dialogues;
 
     public int current_dialogue = 0;
 
@@ -12,20 +12,19 @@ public class Maneger : MonoBehaviour
 
     void Start()
     {
-        // SET THE TEXT TO FIRST DIALOGUE.
+        text_object.text= dialogues[current_dialogue];
     }
 
     public void next_dialogue()
     {
-        // INCREASE CURR DIALOGUE BY 1
-
-
+        // INCREASEd CURR DIALOGUE BY 1
+        while(current_dialogue<10)
+        {
+current_dialogue++;
+        }
+ text_object.text= dialogues[current_dialogue];
         // SET THE DIALOGUE TEXT.
     }
 
 }
 
-// HINTS
-// 1) create a public variable of type TextMeshProUGUI.
-// 2) fill the variable in inspector with the dialogue text
-// 3) on click then set the variable.text to dialogue..

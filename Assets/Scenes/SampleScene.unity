@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e384e8b318c89e94886ac6043de7003d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialouges: []
+  dialogues: []
   current_dialogue: 0
   text_object: {fileID: 0}
 --- !u!4 &1342723667
